@@ -12,7 +12,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<version>0.1.0-SNAPSHOT</version>
+	<artifactId>unpkg-server</artifactId>
 	<packaging>war</packaging>
 	<name>unpkg server</name>
 
@@ -23,13 +23,23 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>io</groupId>
 			<artifactId>unpkg-core</artifactId>
