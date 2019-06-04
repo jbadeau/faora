@@ -4,8 +4,6 @@ import org.springframework.util.MultiValueMap;
 
 /**
  * If the URL is /@scope/name@version/file.js?main=browser:
- * 
- * @author t229545
  */
 public class FaoraUrl {
 
