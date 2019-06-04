@@ -1,4 +1,4 @@
-package io.unpkg.module.action;
+package io.faora.module.action;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.http.HttpServletRequest;
@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import io.unpkg.module.middleware.ValidateQuery;
+import io.faora.module.middleware.ValidateQuery;
 
 public class ServeModule extends HandlerInterceptorAdapter {
 

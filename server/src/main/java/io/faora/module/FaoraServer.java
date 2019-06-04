@@ -1,4 +1,4 @@
-package io.unpkg.module;
+package io.faora.module;
 
 import java.util.concurrent.Callable;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class UnpkgServer {
+public class FaoraServer {
 
-	private static final Logger logger = LoggerFactory.getLogger(UnpkgServer.class);
+	private static final Logger logger = LoggerFactory.getLogger(FaoraServer.class);
 
 	/**
 	 * Special startup request from App Engine

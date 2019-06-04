@@ -1,7 +1,7 @@
-package io.unpkg.module.middleware;
+package io.faora.module.middleware;
 
-import static io.unpkg.module.util.CreateSearch.createSearch;
-import static io.unpkg.module.util.RequestAttributeMask.getQuery;
+import static io.faora.module.util.CreateSearch.createSearch;
+import static io.faora.module.util.RequestAttributeMask.getQuery;
 
 import java.util.HashMap;
 import java.util.Map;

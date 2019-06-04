@@ -1,13 +1,13 @@
-package io.unpkg.module.middleware;
+package io.faora.module.middleware;
 
-import static io.unpkg.module.util.ParsePackageURL.parsePackageURL;
-import static io.unpkg.module.util.RequestAttributeMask.setFilename;
-import static io.unpkg.module.util.RequestAttributeMask.setPackageName;
-import static io.unpkg.module.util.RequestAttributeMask.setPackageSpec;
-import static io.unpkg.module.util.RequestAttributeMask.setPackageVersion;
-import static io.unpkg.module.util.RequestAttributeMask.setPathname;
-import static io.unpkg.module.util.RequestAttributeMask.setQuery;
-import static io.unpkg.module.util.RequestAttributeMask.setSearch;
+import static io.faora.module.util.ParsePackageURL.parsePackageURL;
+import static io.faora.module.util.RequestAttributeMask.setFilename;
+import static io.faora.module.util.RequestAttributeMask.setPackageName;
+import static io.faora.module.util.RequestAttributeMask.setPackageSpec;
+import static io.faora.module.util.RequestAttributeMask.setPackageVersion;
+import static io.faora.module.util.RequestAttributeMask.setPathname;
+import static io.faora.module.util.RequestAttributeMask.setQuery;
+import static io.faora.module.util.RequestAttributeMask.setSearch;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +19,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.web.util.UriComponents;
 
-import io.unpkg.module.UnpkgUrl;
+import io.faora.module.FaoraUrl;
 
 /**
  * Parse the URL and add various properties to the request object to do with the
@@ -41,7 +41,7 @@ public class ValidatePackageURL extends HandlerInterceptorAdapter {
 		logger.info("validatePackageURL");
 
 		UriComponents uri = ServletUriComponentsBuilder.fromRequest(req).build();
-		final UnpkgUrl url = parsePackageURL(uri);
+		final FaoraUrl url = parsePackageURL(uri);
 
 		if (url == null) {
 			res.sendError(HttpServletResponse.SC_FORBIDDEN, String.format("Invalid URL: %s", uri.toUriString()));

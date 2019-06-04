@@ -1,4 +1,4 @@
-package io.unpkg.module.npm;
+package io.faora.module.npm;
 
 import java.util.HashMap;
 import java.util.Map;

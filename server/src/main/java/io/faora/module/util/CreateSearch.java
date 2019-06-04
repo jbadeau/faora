@@ -1,4 +1,4 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
 import java.util.Map;
 import java.util.Map.Entry;

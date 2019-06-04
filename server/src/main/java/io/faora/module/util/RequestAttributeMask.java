@@ -1,11 +1,11 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
 import javax.servlet.ServletRequest;
 
 import org.springframework.util.MultiValueMap;
 
-import io.unpkg.module.npm.NpmInfo;
-import io.unpkg.module.npm.NpmVersion;
+import io.faora.module.npm.NpmInfo;
+import io.faora.module.npm.NpmVersion;
 
 public class RequestAttributeMask {
 

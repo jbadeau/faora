@@ -1,7 +1,7 @@
-package io.unpkg.module.middleware;
+package io.faora.module.middleware;
 
-import static io.unpkg.module.util.RequestAttributeMask.getPackageName;
-import static io.unpkg.module.util.ValidateNpmPackageName.validateNpmPackageName;
+import static io.faora.module.util.RequestAttributeMask.getPackageName;
+import static io.faora.module.util.ValidateNpmPackageName.validateNpmPackageName;
 
 import java.util.List;
 

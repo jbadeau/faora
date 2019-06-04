@@ -1,13 +1,13 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
-import static io.unpkg.module.util.URIComponentEncoder.encodeURIComponent;
+import static io.faora.module.util.URIComponentEncoder.encodeURIComponent;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import io.unpkg.module.npm.NpmPackageNameValidationReport;
+import io.faora.module.npm.NpmPackageNameValidationReport;
 
 public class ValidateNpmPackageName {
 

@@ -1,12 +1,12 @@
-package io.unpkg.module.middleware;
+package io.faora.module.middleware;
 
-import static io.unpkg.module.util.RequestAttributeMask.getFilename;
-import static io.unpkg.module.util.RequestAttributeMask.getPackageConfig;
-import static io.unpkg.module.util.RequestAttributeMask.getPackageInfo;
-import static io.unpkg.module.util.RequestAttributeMask.getPackageName;
-import static io.unpkg.module.util.RequestAttributeMask.getPackageVersion;
-import static io.unpkg.module.util.RequestAttributeMask.setPackageConfig;
-import static io.unpkg.module.util.RequestAttributeMask.setPackageInfo;
+import static io.faora.module.util.RequestAttributeMask.getFilename;
+import static io.faora.module.util.RequestAttributeMask.getPackageConfig;
+import static io.faora.module.util.RequestAttributeMask.getPackageInfo;
+import static io.faora.module.util.RequestAttributeMask.getPackageName;
+import static io.faora.module.util.RequestAttributeMask.getPackageVersion;
+import static io.faora.module.util.RequestAttributeMask.setPackageConfig;
+import static io.faora.module.util.RequestAttributeMask.setPackageInfo;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.http.HttpServletRequest;
@@ -17,8 +17,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import io.unpkg.module.npm.NpmInfo;
-import io.unpkg.module.util.GetNpmPackageInfo;
+import io.faora.module.npm.NpmInfo;
+import io.faora.module.util.GetNpmPackageInfo;
 
 public class FetchPackage extends HandlerInterceptorAdapter {
 

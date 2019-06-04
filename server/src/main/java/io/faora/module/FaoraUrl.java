@@ -1,4 +1,4 @@
-package io.unpkg.module;
+package io.faora.module;
 
 import org.springframework.util.MultiValueMap;
 
@@ -7,7 +7,7 @@ import org.springframework.util.MultiValueMap;
  * 
  * @author t229545
  */
-public class UnpkgUrl {
+public class FaoraUrl {
 
 	/**
 	 * /@scope/name@version/path.js
@@ -39,7 +39,7 @@ public class UnpkgUrl {
 	 */
 	private String filename;
 
-	public UnpkgUrl(String pathname, String search, MultiValueMap<String, String> query, String packageName,
+	public FaoraUrl(String pathname, String search, MultiValueMap<String, String> query, String packageName,
 			String packageVersion, String filename) {
 		super();
 		this.pathname = pathname;

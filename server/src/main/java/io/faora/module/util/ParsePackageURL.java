@@ -1,4 +1,4 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
 import java.io.UnsupportedEncodingException;
 import java.util.regex.Matcher;
@@ -8,7 +8,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriUtils;
 
-import io.unpkg.module.UnpkgUrl;
+import io.faora.module.FaoraUrl;
 
 public class ParsePackageURL {
 
@@ -17,7 +17,7 @@ public class ParsePackageURL {
 	private ParsePackageURL() {
 	}
 
-	public static UnpkgUrl parsePackageURL(UriComponents originalURL) {
+	public static FaoraUrl parsePackageURL(UriComponents originalURL) {
 
 		String pathname = originalURL.getPath();
 		String search = originalURL.getQuery();
@@ -40,7 +40,7 @@ public class ParsePackageURL {
 		String packageVersion = matcher.group(2) != null ? matcher.group(2) : "latest";
 		String filename = matcher.group(3) != null ? matcher.group(3) : "";
 
-		return new UnpkgUrl(
+		return new FaoraUrl(
 				// If the URL is /@scope/name@version/file.js?main=browser:
 				pathname, // /@scope/name@version/path.js
 				search != null ? search : "", // ?main=browser

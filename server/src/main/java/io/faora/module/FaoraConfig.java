@@ -1,21 +1,21 @@
-package io.unpkg.module;
+package io.faora.module;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import io.unpkg.module.action.ServeFile;
-import io.unpkg.module.action.ServeMetadata;
-import io.unpkg.module.action.ServeModule;
-import io.unpkg.module.middleware.FetchPackage;
-import io.unpkg.module.middleware.FindFile;
-import io.unpkg.module.middleware.ValidateQuery;
-import io.unpkg.module.middleware.ValidatePackageName;
-import io.unpkg.module.middleware.ValidatePackageURL;
+import io.faora.module.action.ServeFile;
+import io.faora.module.action.ServeMetadata;
+import io.faora.module.action.ServeModule;
+import io.faora.module.middleware.FetchPackage;
+import io.faora.module.middleware.FindFile;
+import io.faora.module.middleware.ValidatePackageName;
+import io.faora.module.middleware.ValidatePackageURL;
+import io.faora.module.middleware.ValidateQuery;
 
 @Component
-public class UnpkgConfig extends WebMvcConfigurerAdapter {
+public class FaoraConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {

@@ -1,10 +1,10 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.unpkg.module.npm.NpmInfo;
-import io.unpkg.module.npm.NpmRegistry;
+import io.faora.module.npm.NpmInfo;
+import io.faora.module.npm.NpmRegistry;
 
 @Component
 public class GetNpmPackageInfo {

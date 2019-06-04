@@ -1,4 +1,4 @@
-package io.unpkg.module.util;
+package io.faora.module.util;
 
 import org.springframework.web.util.UriUtils;
 
